@@ -184,6 +184,37 @@
   </style>
 
   <script src="js/main.js" defer></script>
+
+  <style>
+    /* Ícones com o mesmo formato em PC e celular */
+    .social-shortcuts a {
+      border-radius: 16px !important;
+    }
+
+    .social-shortcuts a img {
+      border-radius: 0 !important;
+    }
+
+    .link-icon {
+      border-radius: 14px !important;
+    }
+
+    .link-arrow {
+      border-radius: 50% !important;
+    }
+
+    /* Evita que o ajuste de tela altere o formato dos ícones */
+    @media (max-width: 600px) {
+      .social-shortcuts a {
+        border-radius: 16px !important;
+      }
+
+      .link-icon {
+        border-radius: 14px !important;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <a class="skip-link" href="#links">Ir para os links</a>
