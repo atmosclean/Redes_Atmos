@@ -384,3 +384,244 @@ h1 {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* =========================================================
+   CSS que estava no HTML — centralizado aqui
+   ========================================================= */
+.link-icon > svg { width: 22px; height: 22px; display: block; }
+
+/* Ajuste de tela: manter todos os cards visíveis sem rolagem em celulares */
+    @media (max-width: 600px) {
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        min-height: 100svh;
+      }
+
+      .page-shell {
+        min-height: 100svh;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-card {
+        width: min(100%, 430px);
+        max-height: calc(100svh - 20px);
+        overflow: hidden;
+      }
+
+      .profile-header {
+        padding-top: 4px;
+      }
+
+      .logo-wrap {
+        margin-bottom: 4px;
+      }
+
+      .brand-logo {
+        width: 96px;
+        height: 96px;
+        max-height: none;
+        object-fit: contain;
+      }
+
+      .eyebrow {
+        margin: 2px 0 2px;
+        font-size: 0.72rem;
+      }
+
+      .profile-header h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 5.8vw, 2rem);
+      }
+
+      .tagline {
+        margin: 2px 0 4px;
+        font-size: 0.82rem;
+      }
+
+      .intro {
+        margin: 0 auto 7px;
+        font-size: 0.72rem;
+        line-height: 1.25;
+      }
+
+      .social-shortcuts {
+        margin-bottom: 7px;
+      }
+
+      .section-label {
+        margin: 6px 0 7px;
+      }
+
+      .links {
+        gap: 6px;
+      }
+
+      .link-card {
+        min-height: 48px;
+        padding: 7px 11px;
+      }
+
+      .link-icon {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+      }
+
+      .link-text strong {
+        font-size: 0.82rem;
+      }
+
+      .link-text small {
+        font-size: 0.66rem;
+        line-height: 1.15;
+      }
+
+      .profile-footer {
+        margin-top: 7px;
+        padding-top: 5px;
+      }
+
+      .profile-footer p {
+        font-size: 0.65rem;
+      }
+    }
+
+    /* Em telas muito baixas, compacta ainda mais sem criar scroll */
+    @media (max-width: 600px) and (max-height: 700px) {
+      .page-shell {
+        padding: 6px 10px;
+      }
+
+      .profile-header h1 {
+        font-size: 1.45rem;
+      }
+
+      .brand-logo {
+        width: 82px;
+        height: 82px;
+        max-height: none;
+      }
+
+      .social-shortcuts {
+        transform: scale(.9);
+        transform-origin: center;
+        margin: 0 0 2px;
+      }
+
+      .section-label {
+        margin: 3px 0 5px;
+      }
+
+      .links {
+        gap: 4px;
+      }
+
+      .link-card {
+        min-height: 43px;
+        padding: 5px 9px;
+      }
+
+      .link-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+      }
+
+      .profile-footer {
+        display: none;
+      }
+    }
+
+/* Ícones com o mesmo formato em PC e celular */
+    .social-shortcuts a {
+      border-radius: 16px !important;
+    }
+
+    .social-shortcuts a img {
+      border-radius: 0 !important;
+    }
+
+    .link-icon {
+      border-radius: 14px !important;
+    }
+
+    .link-arrow {
+      border-radius: 50% !important;
+    }
+
+    /* Evita que o ajuste de tela altere o formato dos ícones */
+    @media (max-width: 600px) {
+      .social-shortcuts a {
+        border-radius: 16px !important;
+      }
+
+      .link-icon {
+        border-radius: 14px !important;
+      }
+    }
+
+.link-card--google-review {
+  border-color: rgba(247,183,0,.34) !important;
+  background: linear-gradient(110deg,rgba(255,193,7,.12),var(--color-button) 58%) !important;
+  box-shadow: 0 13px 30px rgba(191,143,0,.11) !important;
+}
+.link-card--google-review .link-icon { color:#d59b00; background:linear-gradient(145deg,rgba(255,205,60,.25),rgba(255,193,7,.10)); }
+.link-card--google-review .link-arrow { color:#b98500; border-color:rgba(213,155,0,.25); }
+.link-card--google-review:hover { border-color:rgba(213,155,0,.55) !important; box-shadow:0 17px 34px rgba(191,143,0,.17) !important; }
+.link-card--google-review:hover .link-arrow { background:#d59b00; border-color:#d59b00; }
+
+.link-card--location {
+  border-color:rgba(8,130,145,.28) !important;
+  background:linear-gradient(110deg,rgba(8,130,145,.11),var(--color-button) 58%) !important;
+  box-shadow:0 13px 30px rgba(8,130,145,.11) !important;
+}
+.link-card--location .link-icon { color:var(--color-accent); background:linear-gradient(145deg,rgba(72,217,202,.25),rgba(8,130,145,.12)); }
+.link-card--location:hover { border-color:rgba(8,130,145,.48) !important; box-shadow:0 17px 34px rgba(8,91,103,.17) !important; }
+.link-card--location:hover .link-arrow { background:var(--color-accent); border-color:var(--color-accent); }
+
+.link-card--google-review .link-text strong::after,
+.link-card--location .link-text strong::after {
+  display:inline-block; margin-left:7px; padding:2px 5px; border-radius:999px;
+  font-size:.44rem; font-weight:850; letter-spacing:.08em; vertical-align:2px;
+}
+.link-card--google-review .link-text strong::after { content:"GOOGLE"; color:#9a7100; background:rgba(255,193,7,.14); }
+.link-card--location .link-text strong::after { content:"MAPS"; color:var(--color-accent); background:rgba(8,130,145,.10); }
+
+.profile-card.reveal { animation:atmos-card-in .75s cubic-bezier(.2,.8,.2,1) both; }
+.profile-header .logo-wrap { animation:float 5s ease-in-out infinite, atmos-logo-in .8s cubic-bezier(.2,.8,.2,1) both; }
+.social-shortcuts a { animation:atmos-social-in .55s cubic-bezier(.2,.8,.2,1) both; }
+.social-shortcuts a:nth-child(1) { animation-delay:.16s; }
+.social-shortcuts a:nth-child(2) { animation-delay:.23s; }
+.social-shortcuts a:nth-child(3) { animation-delay:.30s; }
+
+.link-card { animation:atmos-link-in .65s cubic-bezier(.2,.8,.2,1) both; animation-delay:var(--delay,0ms); }
+.link-card--google-review { animation-name:atmos-link-in,google-attention; animation-duration:.65s,2.8s; animation-timing-function:cubic-bezier(.2,.8,.2,1),ease-in-out; animation-delay:var(--delay,0ms),1.8s; animation-iteration-count:1,2; }
+
+@keyframes atmos-card-in { from {opacity:0;transform:translateY(16px) scale(.985)} to {opacity:1;transform:translateY(0) scale(1)} }
+@keyframes atmos-logo-in { from {opacity:0;transform:translateY(-12px) scale(.88)} to {opacity:1;transform:translateY(0) scale(1)} }
+@keyframes atmos-social-in { from {opacity:0;transform:translateY(10px) scale(.88)} to {opacity:1;transform:translateY(0) scale(1)} }
+@keyframes atmos-link-in { from {opacity:0;transform:translateY(14px)} to {opacity:1;transform:translateY(0)} }
+@keyframes google-attention { 0%,100% {transform:translateY(0)} 50% {transform:translateY(-3px)} }
+
+@media (prefers-reduced-motion:reduce) {
+  .profile-card.reveal,.profile-header .logo-wrap,.social-shortcuts a,.link-card,.link-card--google-review { animation:none !important; }
+}
+@media (max-width:600px) {
+  .link-card--google-review .link-text strong::after,.link-card--location .link-text strong::after {
+    font-size:.39rem; margin-left:4px; padding:2px 4px;
+  }
+}
+
+/* Delays das animações — substituem os antigos style="--delay" do HTML */
+.links .link-card:nth-child(1) { --delay: 80ms; }
+.links .link-card:nth-child(2) { --delay: 140ms; }
+.links .link-card:nth-child(3) { --delay: 200ms; }
+.links .link-card:nth-child(4) { --delay: 260ms; }
+.links .link-card:nth-child(5) { --delay: 320ms; }
