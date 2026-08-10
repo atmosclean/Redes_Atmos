@@ -625,3 +625,81 @@ h1 {
 .links .link-card:nth-child(3) { --delay: 200ms; }
 .links .link-card:nth-child(4) { --delay: 260ms; }
 .links .link-card:nth-child(5) { --delay: 320ms; }
+
+/* =========================================================
+   AJUSTE FINAL — GOOGLE E LOCALIZAÇÃO
+   ========================================================= */
+
+.link-card--google-review {
+  border-color: rgba(213, 155, 0, .28) !important;
+  background: linear-gradient(110deg, rgba(255, 193, 7, .055), var(--color-button) 68%) !important;
+  box-shadow: var(--shadow-button) !important;
+}
+
+.link-card--google-review .link-icon {
+  color: #c28b00 !important;
+  background: rgba(255, 193, 7, .12) !important;
+}
+
+.link-card--google-review .link-arrow {
+  color: #b98200 !important;
+  border-color: rgba(213, 155, 0, .22) !important;
+}
+
+.link-card--google-review .link-text strong::after,
+.link-card--google-review .link-text strong::before {
+  content: none !important;
+  display: none !important;
+}
+
+.link-card--google-review:hover {
+  border-color: rgba(213, 155, 0, .44) !important;
+}
+
+.link-card--google-review:hover .link-arrow {
+  color: #fff !important;
+  background: #c28b00 !important;
+  border-color: #c28b00 !important;
+}
+
+/* Localização: verde, para não ficar confundida com o azul da marca */
+.link-card--location {
+  border-color: rgba(24, 155, 115, .32) !important;
+  background: linear-gradient(110deg, rgba(24, 155, 115, .07), var(--color-button) 68%) !important;
+  box-shadow: 0 11px 27px rgba(24, 155, 115, .08) !important;
+}
+
+.link-card--location .link-icon {
+  color: #159b73 !important;
+  background: rgba(24, 155, 115, .12) !important;
+}
+
+.link-card--location .link-arrow {
+  color: #159b73 !important;
+  border-color: rgba(24, 155, 115, .22) !important;
+}
+
+.link-card--location .link-text strong::after,
+.link-card--location .link-text strong::before {
+  content: none !important;
+  display: none !important;
+}
+
+.link-card--location:hover {
+  border-color: rgba(24, 155, 115, .48) !important;
+  box-shadow: 0 17px 34px rgba(24, 155, 115, .14) !important;
+}
+
+.link-card--location:hover .link-arrow {
+  color: #fff !important;
+  background: #159b73 !important;
+  border-color: #159b73 !important;
+}
+
+/* Mantém a entrada suave, sem o antigo "pulo" do Google */
+.link-card--google-review {
+  animation-name: atmos-link-in !important;
+  animation-duration: .65s !important;
+  animation-timing-function: cubic-bezier(.2,.8,.2,1) !important;
+  animation-iteration-count: 1 !important;
+}
