@@ -10,7 +10,7 @@
 
 <br>
 
-<img src="./brand/logos/LOGO PRINCIPAL (HORIZONTAL) (5).png" width="420" alt="Atmos Clean">
+<img src="assets/brand/logo.png" width="620" alt="Atmos Clean">
 
 <br><br>
 
