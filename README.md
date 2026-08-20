@@ -1,59 +1,69 @@
-# Lobby de links — Atmos Clean
+<div align="center">
 
-Página de bio/link hub feita apenas com HTML, CSS e JavaScript puro. Não exige instalação, build, framework ou CDN.
+# ATMOS CLEAN
 
-## Visualizar localmente
+### DIGITAL EXPERIENCE · BRAND SYSTEM · PREMIUM CLEANING
 
-Abra `index.html` diretamente no navegador. Se preferir um servidor local:
+<br>
 
-```powershell
-python -m http.server 8000
-```
+**Seu ambiente merece mais do que limpeza.**
 
-Depois acesse `http://localhost:8000`.
+<br>
 
-## Onde editar
+<img src="./brand/logos/LOGO PRINCIPAL (HORIZONTAL) (5).png" width="420" alt="Atmos Clean">
 
-- **Nome, slogan e descrição:** procure por `DADOS EDITÁVEIS DA MARCA` em `index.html`.
-- **Links:** edite somente as variáveis `social-link-whatsapp`, `social-link-instagram` e `social-link-facebook` no topo do `index.html`. Cada valor é aplicado automaticamente ao atalho e ao cartão correspondente.
-- **Textos dos botões:** edite o texto diretamente em cada bloco `.link-card`.
-- **Logo:** os arquivos oficiais da Atmos Clean já estão em `assets/brand/`; substitua-os mantendo os nomes ou altere o caminho no HTML.
-- **Favicon e fundo:** ficam em `assets/brand/`.
-- **Cores e aparência:** altere as variáveis no início de `css/style.css`.
-- **Adicionar/remover rede:** copie ou apague um bloco `<a class="link-card">` no HTML e crie a variável `social-link-*` correspondente.
+<br><br>
 
-Os endereços atuais são placeholders. Enquanto não forem substituídos, o JavaScript bloqueia o redirecionamento e informa que o canal ainda não foi configurado. Troque o número `5500000000000` e os perfis vazios antes de publicar. A página usa sempre o tema claro.
+![Status](https://img.shields.io/badge/STATUS-EM%20EVOLUÇÃO-088291?style=for-the-badge)
+![Brand](https://img.shields.io/badge/BRAND-ATMOS%20CLEAN-09BFC0?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/RESPONSIVE-YES-48D9CA?style=for-the-badge)
+![UX](https://img.shields.io/badge/UX-PREMIUM-F77F00?style=for-the-badge)
 
-## Publicar no GitHub Pages
+</div>
 
-1. Crie um repositório no GitHub.
-2. Envie todos os arquivos e pastas deste projeto.
-3. Abra **Settings > Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch `main`, a pasta `/ (root)` e clique em **Save**.
-6. Aguarde o GitHub gerar o endereço público.
+---
 
-## Estrutura
+# ◉ ATMOS CLEAN
+
+> **Não é apenas um site.**
+>
+> É a experiência digital da Atmos Clean.
+
+O projeto **Atmos Clean** representa a presença digital institucional da marca, reunindo identidade visual, experiência do usuário, apresentação de serviços, resultados, relacionamento e conversão em uma única experiência.
+
+O projeto foi desenvolvido para transmitir os mesmos atributos presentes no posicionamento da Atmos Clean:
+
+**limpeza · higiene · cuidado · técnica · confiança · conforto · profissionalismo · qualidade**
+
+A experiência visual segue o sistema de identidade oficial da marca e deve permanecer consistente em todas as futuras evoluções.
+
+---
+
+# ✦ VISÃO DO PROJETO
+
+A Atmos Clean atua com higienização profissional de:
+
+- Sofás
+- Colchões
+- Estofados
+- Cadeiras
+- Poltronas
+- Bancos
+- Outros tecidos e superfícies compatíveis com os serviços oferecidos
+
+A presença digital deve transformar esses serviços em uma experiência clara e confiável.
+
+O usuário precisa compreender rapidamente:
 
 ```text
-.
-├── index.html
-├── README.md
-├── assets
-│   ├── brand
-│   │   ├── logo.svg
-│   │   ├── logo-horizontal.svg
-│   │   ├── logo.png
-│   │   ├── favicon.svg
-│   │   ├── favicon.png
-│   │   └── background.svg
-│   └── icons
-├── css
-│   └── style.css
-└── js
-    └── main.js
-```
-
-## Acessibilidade
-
-O projeto inclui foco visível, link de salto, textos alternativos, navegação por teclado, contraste responsivo ao tema e suporte a `prefers-reduced-motion`.
+QUEM SOMOS
+     ↓
+O QUE FAZEMOS
+     ↓
+COMO FAZEMOS
+     ↓
+POR QUE CONFIAR
+     ↓
+QUAL É O RESULTADO
+     ↓
+COMO CONTRATAR
